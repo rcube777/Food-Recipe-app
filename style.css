@@ -10,6 +10,9 @@ nav{
     z-index: 5;
     
 }
+body{
+    background-color: #e8e7cd;
+}
 /* nav */
 .con {
     padding-top: 60px;
@@ -113,6 +116,10 @@ ul li a {
     padding: 20px;
     border-radius: 10px;
     
+}
+.card-box{
+    display: flex;
+    justify-content: center;
 }
 .card p {
     text-align: justify;
