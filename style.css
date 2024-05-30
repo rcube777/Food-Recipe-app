@@ -201,6 +201,9 @@ ul li a {
         display: flex;
         flex-wrap: wrap;
     }
+    .card {
+        height: 500px;
+    }
     .about-sec{
         width: 90%;
         padding-left: 10px;
@@ -231,6 +234,9 @@ ul li a {
         width: 200px;
         border: 1px solid #ddd;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .card{
+        height: 500px;
     }
 
     #sidemenu.show {
