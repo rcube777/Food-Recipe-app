@@ -1,61 +1,44 @@
 body {
     background-color: #e8e7cd;
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
-
-.inside-box {
+.inside-box{
     display: flex;
     justify-content: center;
-    padding: 10px;
-}
 
-.main-text h1 {
+}
+.main-text h1{
     text-align: center;
-    font-size: 2rem;
 }
-
-.details {
+.details{
     height: 80vh;
     width: 90%;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
-    overflow: hidden;
 }
-
-.head-text h2 {
+.head-text h2{
     text-align: center;
-    font-size: 1.5rem;
-    margin-top: 20px;
 }
-
-.detail-img {
+.detail-img{
     height: 500px;
     width: 100%;
     margin-left: 30px;
     border: 1px solid black;
 }
-
 .content-area {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
 }
-
 .detail-description {
     margin-left: 40px;
     padding-right: 30px;
-    flex: 1;
 }
-
 .detail-description p {
     text-align: justify;
-    font-size: 1rem;
 }
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
+
     .details {
         height: 90vh;
         width: 100%;
