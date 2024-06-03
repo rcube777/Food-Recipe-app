@@ -33,7 +33,6 @@ function toggleMenu() {
     } else {
       alert("Please enter a search term.");
     }
-    input.value = "";
   });
   
 
