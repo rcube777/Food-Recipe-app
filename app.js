@@ -62,12 +62,13 @@ function toggleMenu() {
       </div>
       <div class="card-content">
           <div class="card-content-detail">
-              <h3 style="margin-top: 15px;">Food Name: ${result.recipe.label}</h3>
-              <h3 style="margin-top: 15px;">Calories: ${result.recipe.calories.toFixed(2)}</h3>
-              <h3 style="margin-top: 15px;">Meal Type: ${result.recipe.mealType}</h3>
+              <p style="margin-top: 15px;"><b>Food Name:</b> <i>${result.recipe.label}</i></p>
+              <p style="margin-top: 15px;"><b>Calories:</b> <i>${result.recipe.calories.toFixed(2)}</i></p>
+              <p style="margin-top: 15px;"><b>Meal Type:</b> <i>${result.recipe.mealType}</i></p>
+              <p style="margin-top: 15px;"><b>Ingredients:</b> <i>${result.recipe.ingredientLines}</i></p>
           </div>
           <div class="card-button">
-              <button><a href="details.html">See more</a></button><br>
+              <button><a href= "${result.recipe.url}" target= "_blank">See more</a></button><br>
               <button style="width: 81px;">favourite</button>
           </div>
       </div>

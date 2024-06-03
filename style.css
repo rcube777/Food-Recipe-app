@@ -142,6 +142,9 @@ ul li a {
     display: flex;
     justify-content: space-between;
 }
+.card-content-detail{
+    padding-right: 10px;
+}
 button {
     height: fit-content;
     padding: 5px;
