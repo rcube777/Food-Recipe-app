@@ -81,16 +81,16 @@ ul li a {
     
 }
 .input{
-    font-size: 1.5rem;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 9px;
     border: none;
     border: 1px solid rgba(128, 128, 128, 0.641);
     border-radius: 15px;
     width: 800px;
 }
 .search{
-    padding: 5px;
-    font-size: 1.3rem;
+    padding: 8px;
+    font-size: 1rem;
     border-radius: 10px;
     background-color: bisque;
     border: none;
@@ -110,11 +110,12 @@ ul li a {
     background-color: white;
     margin-left: 10px;
     margin-right: 10px;
-    height: 450px;
+    height: auto;
     width: 400px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
     
 }
 .card-box{
@@ -130,6 +131,26 @@ ul li a {
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 15%;
+}
+ img {
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+    width: 400px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    height: fit-content;
+    padding: 5px;
+    margin-top: 10px;
+}
+button a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
 }
 
 /* about section */
@@ -209,7 +230,7 @@ ul li a {
         flex-wrap: wrap;
     }
     .card {
-        height: 500px;
+        height: auto;
     }
     .about-sec{
         width: 90%;
@@ -236,14 +257,23 @@ ul li a {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 0;
+        margin-right: 0;
         background-color:  #e8e7cd; 
         width: 200px;
         border: 1px solid #ddd;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .card{
-        height: 500px;
+        height: auto;
+    }
+    img{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .input{
+        font-size: 1rem;
+        padding: 9px;
     }
 
     #sidemenu.show {

@@ -19,11 +19,12 @@ body {
 .head-text h2{
     text-align: center;
 }
-.detail-img{
+img{
+    background-position: center;
+    background-size: cover;
     height: 500px;
-    width: 100%;
+    width: 400px;
     margin-left: 30px;
-    border: 1px solid black;
 }
 .content-area {
     display: flex;
@@ -31,6 +32,9 @@ body {
 .detail-description {
     margin-left: 40px;
     padding-right: 30px;
+}
+.detail-description h3 {
+    margin-top: 0;
 }
 .detail-description p {
     text-align: justify;
@@ -40,13 +44,14 @@ body {
 @media (max-width: 768px) {
 
     .details {
-        height: 90vh;
+        height: 100%;
         width: 100%;
         margin: 0;
     }
 
-    .detail-img {
-        height: 250px;
+    img {
+        text-align: center;
+        height: 400px;
         width: 100%;
         margin: 0;
     }
@@ -75,13 +80,20 @@ body {
 }
 
 @media (max-width: 480px) {
+    .inside-box{
+        margin-top: 30px;
+    }
+    .details {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
     .main-text h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
-    .detail-img{
-        height: 200px;
+    img{
+        height: 350px;
     }
-
     .head-text h2 {
         font-size: 1rem;
     }
