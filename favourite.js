@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadFavourites() {
         let favourites = JSON.parse(localStorage.getItem('favorites')) || [];
         if (favourites.length === 0) {
-            favContainer.innerHTML = "<p>No favourite recipes found.</p>";
+            favContainer.innerHTML = "<h2>No favourite recipes found.</h2>";
             return;
         }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p style="margin-top: 15px;"><b>Calories:</b> <i>${recipe.calories}</i></p>
                             <p style="margin-top: 15px;"><b>Meal Type:</b> <i>${recipe.mealType}</i></p>
                             <p style="margin-top: 15px;"><b>Ingredients:</b> <i>${recipe.ingredients}</i></p>
-                        </div>
+                        </div> 
                         <div class="card-button">
                             <button><a href="${recipe.detailsUrl}" target="_blank">See more</a></button><br>
                             <button class="delete-fav" data-recipe='${JSON.stringify(recipe)}' style="width: 81px;">Delete Fav</button>

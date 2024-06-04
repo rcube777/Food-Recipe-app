@@ -12,7 +12,8 @@ nav{
     
 }
 body{
-    background-color: #e8e7cd;
+    background-color: black;
+    /* background-color: #e8e7cd; */
 } 
 
 .con {
@@ -233,6 +234,10 @@ button a:hover {
     padding-bottom: 50px;
     justify-content: center;
     gap: 20px; 
+    color: black; 
+}
+.fav-card h2 {
+    color: white;
 }
 .fav-head-text h1{
     text-align: center;
