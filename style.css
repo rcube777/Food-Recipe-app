@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: rgb(242, 205, 159);
+    background-color: #e8e7cd;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -12,8 +12,8 @@ nav{
 }
 body{
     background-color: #e8e7cd;
-}
-/* nav */
+} 
+
 .con {
     padding-top: 60px;
 }
@@ -33,6 +33,12 @@ body{
     align-items: center;
     
 }
+
+#sidemenu a:hover {
+    background-color: black;
+    color: white;
+}
+
 .nav-content .top{
     padding-left: 10px;
     font-size: 2.5rem;
@@ -46,6 +52,12 @@ ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 5px;
+}
+.active:active {
+    background-color: rgb(255, 0, 0);
+    color: white;
 }
 
 /* home page hero section */
@@ -87,12 +99,13 @@ ul li a {
     border: 1px solid rgba(128, 128, 128, 0.641);
     border-radius: 15px;
     width: 800px;
+    background-color: whitesmoke
 }
 .search{
     padding: 8px;
     font-size: 1rem;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: #e8e7cd;
     border: none;
     border: 1px solid gray
 }
@@ -104,10 +117,12 @@ ul li a {
     padding-bottom: 50px;
     justify-content: center;
     gap: 20px;
-    background-color: #e8e7cd;
+    background-color: black;
+    /* background-color: #e8e7cd; */
 }
 .card{
-    background-color: white;
+    background-color: #e8e7cd;
+    /* background-color: white; */
     margin-left: 10px;
     margin-right: 10px;
     height: auto;
@@ -147,13 +162,25 @@ ul li a {
 }
 button {
     height: fit-content;
-    padding: 5px;
+    padding: 5px 0;
     margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: black;
+    color:whitesmoke;
 }
 button a {
     text-decoration: none;
     color: black;
-    padding: 5px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+button a:hover {
+    color: whitesmoke;
 }
 
 /* about section */
@@ -161,7 +188,9 @@ button a {
 .about-container{
     display: flex;
     justify-content: space-around;
-    background-color: #e8e7cd;
+    background-color: black;
+    color: whitesmoke;
+    /* background-color: #e8e7cd; */
     height: 100%;
     width: 100%;
 }
@@ -192,7 +221,8 @@ button a {
 
 /* favourite container */
 .fav-container{
-    background-color: #e8e7cd;
+    background-color: rgb(0, 0, 0);
+    /* background-color: #e8e7cd; */
     height: 100%;
 }
 .fav-card{
@@ -205,7 +235,8 @@ button a {
 }
 .fav-head-text h1{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
+    color: whitesmoke;
 }
 
 /* mobile responsive */
