@@ -1,3 +1,4 @@
+// function for toggling menu when in mobile responsive
 function toggleMenu() {
     let menu = document.getElementById('sidemenu');
     menu.classList.toggle('show');
@@ -5,6 +6,8 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const favContainer = document.querySelector('.fav-card');
+
+    // function for loading recipe from local storage to favourite page
 
     function loadFavourites() {
         let favourites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addDeleteButtonListeners();
     }
 
+    // function for adding event listner to delete button
     function addDeleteButtonListeners() {
         const deleteButtons = document.querySelectorAll('.delete-fav');
         deleteButtons.forEach(button => {
@@ -48,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
+// function for deleting favourite recipes
     function deleteFromFavourites(recipe) {
         let favourites = JSON.parse(localStorage.getItem('favorites')) || [];
         favourites = favourites.filter(fav => fav.foodName !== recipe.foodName);

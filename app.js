@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const APP_ID = "0cc1a238";
   const APP_key = "f8673989d9f8ddb1ae790e02cdedd9b8";
 
+// adding event listner to search box
   form.addEventListener("submit", (e) => {
       e.preventDefault();
       searchValue = e.target.querySelector("input").value.trim();
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+//   fetching api
   async function fetchApi() {
       try {
           const baseURL = `https://api.edamam.com/search?q=${searchValue}&app_id=${APP_ID}&app_key=${APP_key}&to=20`;
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   }
 
+//   function for generating results
   function generateHtml(results) {
       if (!foodCard) {
           console.error("Required elements not found in the DOM.");
@@ -97,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       addFavouriteButtonListeners();
   }
 
+//   function for adding event listner to fav button
   function addFavouriteButtonListeners() {
       const favButtons = document.querySelectorAll('.fav-button');
       favButtons.forEach(button => {
@@ -107,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+//   function for saving recipe in local storage
   function saveToFavourites(recipe) {
       let favourites = JSON.parse(localStorage.getItem('favorites')) || [];
       favourites.push(recipe);
